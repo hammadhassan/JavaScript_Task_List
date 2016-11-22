@@ -1,0 +1,13 @@
+body {
+    background-color: midnightblue;
+}
+h1 {
+    color: snow;
+    font-size: 28px;
+    font-style: oblique;
+}
+.container {
+    margin: 0 auto;
+    height: 300px;
+    width: 400px;
+}
