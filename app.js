@@ -28,6 +28,6 @@ function removed() {
 function edit() {
     var edit = document.getElementsByTagName("li").value;
     if (tasklist.length <= 1) {
-        document.getElementById("li").innerHTML = ("<button type = 'edit' value = 'edit' >" + edit + "</button>")
+        document.getElementById("li").innerHTML = ("<button type = 'edit' value = 'edit' >" + "edit" + "</button>")
     }
 }
