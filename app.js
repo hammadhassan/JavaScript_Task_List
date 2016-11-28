@@ -12,7 +12,7 @@ function add() {
     var list = document.getElementById("list");
     var info = "";
     for(var i = 0; i < tasklist.length; i++) {
-        info = info + ("<li>" + tasklist[i] + "</li>"); 
+        info = info + ("<li>" + tasklist[i] + "<button type='edit' class='edit' >edit</button>" + "<button class='delete' type='delet'>Delete</button>" +"</li>"); 
         list.innerHTML = info;
     }
     myInput.value = "";
@@ -23,11 +23,12 @@ function removed() {
     // list = "";
     // info = "";
     // tasklist = [];
-    document.getElementById("list").style.display = 'none';
+    document.getElementById("list").style.display = "none";
 }
 function edit() {
-    var edit = document.getElementsByTagName("li").innerHTML;
-    if (tasklist.length <= 1) {
-        document.getElementById("li").innerHTML = ("<button type = 'edit' value = 'edit' >" + "edit" + "</button>")
-    }
+    
 }
+if (tasklist.length <= 1) {
+        document.getElementsByTagName("li").innerHTML = ("<button type = 'edit' value = 'edit' >" + "edit" + "</button>")
+    }
+    //alert(edit);
