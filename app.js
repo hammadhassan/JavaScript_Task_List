@@ -1,16 +1,33 @@
 var tasklist = [];
+//add function
 function add() {
-    if (tasklist.length = 1) {
-        var name = document.getElementById("myInput").innerHTML = ("<li>" + tasklist[i] + "</li>");
-        //tasklist.push(document.getElementById("list").innerHTML = ("<li>" + tasklist[i] + "</li>"); 
+    var data = document.getElementById("myInput").value;
+    //if input is empty
+    if (data == "" || data == " " || data == "  " ) {
+        alert("Please Enter Your Task")
     }
-    //document.getElementById("list").innerHTML=("<li>" + tasklist[i] + "</li>");
+    else {
+        tasklist.push(data);
+    }
+    var list = document.getElementById("list");
     var info = "";
-    for(var i = 0; i <= tasklist.length; i++) {
-        info += document.getElementById("myInput").innerHTML = ("<li>" + tasklist[i] + "<li>");
+    for(var i = 0; i < tasklist.length; i++) {
+        info = info + ("<li>" + tasklist[i] + "</li>"); 
+        list.innerHTML = info;
     }
+    myInput.value = "";
 }
+//removed code
 function removed() {
-    tasklist = [];
-    list = "";
+    // location.reload();
+    // list = "";
+    // info = "";
+    // tasklist = [];
+    document.getElementById("list").style.display = 'none';
+}
+function edit() {
+    var edit = document.getElementsByTagName("li").innerHTML;
+    if (tasklist.length <= 1) {
+        document.getElementById("li").innerHTML = ("<button type = 'edit' value = 'edit' >" + "edit" + "</button>")
+    }
 }

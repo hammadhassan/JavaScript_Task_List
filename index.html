@@ -7,14 +7,15 @@
 </head>
 <body>
     <div class="container">            
-    <h1>Task List</h1>
-    <input type="text" id="myInput" placeholder="Enter Your Task" autofocus >
-    <button value="add" onclick="add()">Add</button>
-    <button onclick="removed()">Remove</button>
+    <h1>Task List</h1>   
+    <div class="user">
+    <input type="text" id="myInput" placeholder="Enter Your Task" autofocus value="" >
+    <button onclick="add()" class="addBtn">Add</button>
+    <button onclick="removed()" class="remove">Remove</button>
+    </div>
     <ul id="list">
-        <!--<li></li>
-        <li></li>-->    
-    </ul>    
+    </ul>
+    <p id="one"></p>
     </div>
     <script src="app.js"></script>
 </body>
