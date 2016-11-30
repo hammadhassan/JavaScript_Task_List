@@ -26,6 +26,8 @@ function removed() {
     document.getElementById("list").style.display = "none";
 }
 function edit() {
+    //document.getElementsByTagName("li").innerHTML = ("<input type = 'edit' value = 'edit' onClick = 'edit()' >" + tasklist )
+    alert("yes");
     
 }
 if (tasklist.length <= 1) {
