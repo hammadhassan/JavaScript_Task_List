@@ -69,7 +69,7 @@ h1 {
 .addBtn:onfocus {
     border: none;
 }
-ul li {
+ol li {
     /*border: 2px double black;*/
     width: 80%;
     background-color: #1C78F2;

@@ -27,7 +27,8 @@ function removed() {
 }
 function edit() {
     var tasklist1 = prompt("edit");
-    tasklist1.push(tasklist[i].value);
+    var arr = [taskliskt1];
+    arr.push(tasklist[i]);
     //alert("yes");
 }
 function deleteb() {
