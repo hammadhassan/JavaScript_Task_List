@@ -21,7 +21,7 @@ function add() {
     for(i = 0; i < deletebutton.length; i++){
         deletebutton[i].onclick = function(){
            this.parentElement.style.display = "none";
-           deletebutton = [];
+           //return ol.removeChild(this.parentNode);
         }
     }
 }
