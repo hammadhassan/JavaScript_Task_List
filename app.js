@@ -12,26 +12,45 @@ function add() {
     var list = document.getElementById("list");
     var info = "";
     for(var i = 0; i < tasklist.length; i++) {
-        info = info + ("<li>" + tasklist[i] + "<button type='edit' class='edit' onClick='edit();'>edit</button>" + "<button class='delete' type='delet' onClick='deleteb();'>Delete</button>" +"</li>"); 
+        info = info + ("<li>" + tasklist[i]/*+ "<button type='edit' class='edit' id='edit' onClick='edit();'>edit</button>"*/ +"<button class='delete' type='delet' >Delete</button>" +"</li>"); 
         list.innerHTML = info;
     }
     myInput.value = "";
+    //Remove individual item    
+    var deletebutton = document.getElementsByClassName("delete");
+    for(i = 0; i < deletebutton.length; i++){
+        deletebutton[i].onclick = function(){
+           this.parentElement.style.display = "none";
+           deletebutton = [];
+        }
+    }
 }
 //removed code
 function removed() {
-    // location.reload();
-    // list = "";
-    // info = "";
-    // tasklist = [];
-    document.getElementById("list").style.display = "none";
+    document.getElementById("list").innerHTML = "";
+    tasklist = [];
 }
-function edit() {
-    var tasklist1 = prompt("edit");
-    var arr = [taskliskt1];
-    arr.push(tasklist[i]);
-    //alert("yes");
-}
-function deleteb() {
-    //document.getElementsByTagName("li").style.display = "none";
-    alert("work");
-}
+// function edit() {
+//         var tasklist1 = prompt("edit");
+//         var edit = document.getElementById("edit");
+//     for (var i = 0; i < edit.legnth; i++) {
+//         edit[i].onClick = function() {
+//             tasklist1.push(tasklist[i]);
+//         }
+//     }
+// }
+// //Remove individual item    
+    // var deletebutton = document.getElementsByClassName("delete");
+    // for(i = 0; i < deletebutton.length; i++){
+    //     deletebutton[i].onclick = function(){
+    //         this.parentElement.style.display = "none";
+    //     }
+    // }
+//  function deleteb() {
+//      var deletebutton = document.getElementsByClassName("delete");
+//     for(i = 0; i < deletebutton.length; i++){
+//         deletebutton[i].onclick = function(){
+//              this.parentElement.style.display = "none";
+//         }
+//     }   
+//  }

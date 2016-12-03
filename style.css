@@ -73,17 +73,17 @@ ol li {
     /*border: 2px double black;*/
     width: 80%;
     background-color: #1C78F2;
-    list-style: none;
+    /*list-style: none;*/
     font-size: 24px;
     border-radius: 11px;
     text-align: center;
-    float: left;
+    /*float: left;*/
     margin: 0 15px 7px;
     height: 37px;
     padding-top: 10px;
     font-weight: bold;
 }
-.edit {
+/*.edit {
     float: left;
     border-radius: 9px;
     height: 25px;
@@ -94,7 +94,7 @@ ol li {
     padding: 0px;
     background-color: #52A600;
     border: 1px double #52A652;
-}
+}*/
 .delete {
     float: right;
     border-radius: 9px;
