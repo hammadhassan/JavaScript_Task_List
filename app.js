@@ -18,9 +18,11 @@ function add() {
     myInput.value = "";
     //Remove individual item    
     var deletebutton = document.getElementsByClassName("delete");
-    for(i = 0; i < deletebutton.length; i++){
-        deletebutton[i].onclick = function(){
-           this.parentElement.style.display = "none";
+    for(var j = 0; j < deletebutton.length; j++){
+        deletebutton[j].onclick = function(){
+           this.parentElement.style.display = "none"; 
+        //    tasklist.splice(0, 1);
+        //    console.log(tasklist);
            //return ol.removeChild(this.parentNode);
         }
     }
