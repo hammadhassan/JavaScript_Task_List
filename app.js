@@ -21,13 +21,13 @@ function add() {
     for(var j = 0; j < deletebutton.length; j++){
         deletebutton[j].onclick = function(){
            this.parentElement.style.display = "none"; 
-        //    tasklist.splice(0, 1);
+            tasklist.splice(0, 1);
         //    console.log(tasklist);
            //return ol.removeChild(this.parentNode);
         }
     }
 }
-//removed code
+//removed all items
 function removed() {
     document.getElementById("list").innerHTML = "";
     tasklist = [];
