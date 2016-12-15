@@ -22,8 +22,6 @@ function add() {
         deletebutton[j].onclick = function(){
            this.parentElement.style.display = "none"; 
             tasklist.splice(0, 1);
-        //    console.log(tasklist);
-           //return ol.removeChild(this.parentNode);
         }
     }
 }
